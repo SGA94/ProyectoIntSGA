@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+#general {
+  margin: 10px;
+  padding: 0;
+  background-color: black;
+  box-sizing: border-box;
+  background-image: linear-gradient(#0C0552, #120567);
+  color: #f2f2f2;
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+/* #general h2 {
+  display: flex;
+  justify-content: center;
+  font-family: 'Allura', cursive;
+  font-size: 48px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+#general h2:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: 2px solid #f2f2f2;
+  box-shadow: 0 0 10px #f2f2f2;
+  opacity: 1;
+} */
