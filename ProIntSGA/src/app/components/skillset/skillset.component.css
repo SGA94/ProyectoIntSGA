@@ -1,0 +1,129 @@
+/* Skill progrsivo */
+.my-skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container .row {
+  gap: 50px;
+}
+
+.container .col {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .col .progress {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.container .col .progress svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform: rotate(270deg);
+}
+
+.container .col .progress svg circle {
+  width: 150px;
+  height: 150px;
+  fill: transparent;
+  stroke-width: 3;
+  stroke: black;
+  transform: translate(5px,5px);
+}
+
+.container .col .progress svg circle:nth-child(2) {
+  stroke: var(--color);
+  stroke-dasharray: 440;
+  stroke-dashoffset: calc(440 - (440 * var(--num) / 100));
+  opacity: 0;
+  animation: spam 2s alternate-reverse infinite;
+  animation-delay: 2s;
+}
+
+@keyframes spam {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.punto {
+  position: absolute;
+  inset: 5px;
+  z-index: 10;
+  transform: rotate(calc(3.6deg * var(--num)));
+  animation: movpunto 2s linear forwards;
+}
+
+@keyframes movpunto {
+  0% {
+    transform: rotate(0deg) ;
+  }
+  100% {
+    transform: rotate(calc(3.6deg * var(--num)));
+  }
+  
+}
+.punto::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color);
+  box-shadow: 0 0 10px var(--color), 0 0 30px var(--color);
+}
+
+.numero {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.numero h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  font-weight: 700;
+  color: var(--color);
+}
+
+.numero h2 span {
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.numero p {
+  font-weight: 500;
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TitleofficeComponent } from './titleoffice.component';
+import { EstudiosComponent } from './estudios.component';
 
-describe('TitleofficeComponent', () => {
-  let component: TitleofficeComponent;
-  let fixture: ComponentFixture<TitleofficeComponent>;
+describe('EstudiosComponent', () => {
+  let component: EstudiosComponent;
+  let fixture: ComponentFixture<EstudiosComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TitleofficeComponent ]
+      declarations: [ EstudiosComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TitleofficeComponent);
+    fixture = TestBed.createComponent(EstudiosComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
