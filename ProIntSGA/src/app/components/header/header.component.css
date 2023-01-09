@@ -109,7 +109,7 @@
   height: 500px;
   display: flex;
   align-items: center;
-  background-color: black;
+  background-color: #0E0558;
   background-image: url(../../../assets/img/fondo-perfil.png);
   background-position: center;
   background-attachment: fixed;
@@ -125,6 +125,10 @@
   box-shadow: 0 0 10px #f2f2f2, 0 0 30px #f2f2f2;
   border-radius: 50%;
   width: 204px;
+  height: 204px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .imagen-perfil img {
@@ -159,6 +163,7 @@
   }
   .imagen-perfil {
     width: 154px;
+    height: 154px;
   }
   .imagen-perfil img {
     width: 150px;
