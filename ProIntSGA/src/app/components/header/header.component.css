@@ -5,7 +5,7 @@
 
 .container-fluid.topbar {
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   box-shadow: 0 0 10px #f2f2f2, 0 0 30px #f2f2f2;
 }
 
@@ -22,18 +22,6 @@
 .argprog-link img {
   width: 180px;
   padding: 10px;
-}
-
-@media screen and (max-width:500px) {
-  .argprog-link img {
-    width: 120px;
-  }
-}
-
-@media screen and (min-width:500px) {
-  .redes-soc {
-    width: 200px;
-  }
 }
 
 .argprog .yoprog a {
@@ -103,7 +91,21 @@
   }
 } 
 
+@media screen and (max-width:500px) {
+  .argprog-link img {
+    width: 120px;
+  }
+}
+
+@media screen and (min-width:500px) {
+  .redes-soc {
+    width: 200px;
+  }
+}
+
 .container-fluid.perfil {
+  margin-top: 10px;
+  margin-bottom: 10px;
   height: 500px;
   display: flex;
   align-items: center;
@@ -111,6 +113,7 @@
   background-image: url(../../../assets/img/fondo-perfil.png);
   background-position: center;
   background-attachment: fixed;
+  background-size: cover;
   border: 2px solid #f2f2f2;
 }
 
