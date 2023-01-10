@@ -51,16 +51,6 @@
   font-family: 'Orbitron', sans-serif;
 }
 
-.frase {
-  font-family: 'Lobster', cursive;
-  display: flex;
-  justify-content: center;
-}
-
-.frase p {
-  font-size: 2.4vmax;
-}
-
 .certificado {
   display: flex;
   flex-direction: column;
@@ -110,6 +100,7 @@
 .textelec .text {
   color: #f2f2f2;
   position: absolute;
+  padding: 0 5px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -137,6 +128,7 @@
 .textcom .text {
   color: #f2f2f2;
   position: absolute;
+  padding: 0 5px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -164,6 +156,7 @@
 .textdev .text {
   color: #f2f2f2;
   position: absolute;
+  padding: 0 5px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);

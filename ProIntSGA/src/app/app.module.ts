@@ -11,6 +11,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ExplabComponent } from './components/explab/explab.component';
 import { EstudiosComponent } from './components/estudios/estudios.component';
 import { SkillsetComponent } from './components/skillset/skillset.component';
+import { TopbarComponent } from './components/topbar/topbar.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SkillsetComponent } from './components/skillset/skillset.component';
     FooterComponent,
     ExplabComponent,
     EstudiosComponent,
-    SkillsetComponent
+    SkillsetComponent,
+    TopbarComponent
   ],
   imports: [
     BrowserModule,
