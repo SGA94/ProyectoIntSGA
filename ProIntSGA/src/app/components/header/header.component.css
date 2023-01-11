@@ -11,7 +11,7 @@
 }
 
 .container-fluid {
-  background-color: #00000033;
+  background-color: rgba(0, 0, 0, 0.35);
   height: 500px;
   border: 2px solid #f2f2f2;
   color: white;
@@ -23,7 +23,7 @@
   font-size: 3vmax;
 }
 
-.row.perfil {
+.perfil {
   margin-left: 20px;
   width: 200px;
   transform: translateY(100px);
@@ -32,7 +32,7 @@
   text-align: center;
 }
 
-.imagen-perfil .img-fluid {
+.img-perfil .img-fluid {
   border-radius: 50%;
   border: 2px solid #f2f2f2;
   box-shadow: 0 0 10px #f2f2f2, 0 0 30px #f2f2f2;
@@ -44,11 +44,11 @@
 }
 
 @media screen and (max-width:599px){
-.row.perfil {
+.perfil {
   margin: 0;
   width: 100%
 }
-.imagen-perfil .img-fluid{
+.img-perfil .img-fluid{
   width: 200px;
 }
 }
