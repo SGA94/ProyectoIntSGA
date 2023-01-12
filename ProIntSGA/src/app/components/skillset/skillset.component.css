@@ -40,113 +40,11 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 20px;
 }
 
 .skill {
-  position: relative;
-  width: 400px;
-  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.progress {
-  position: relative;
-  width: 320px;
-  height: 320px;
-  background: transparent;
-}
-
-.progress svg {
-  position: relative;
-  width: 320px;
-  height: 320px;
-  transform: rotate(270deg);
-}
-
-.progress svg circle {
-  width: 100%;
-  height: 100%;
-  fill: transparent;
-  stroke-width: 5px;
-  stroke: black;
-}
-
-.progress svg circle:nth-child(2) {
-  stroke: var(--color);
-  stroke-dasharray: 943;
-  stroke-dashoffset: calc(943 - (943 * var(--num) / 100));
-  animation: spam 2s alternate-reverse infinite;
-  animation-delay: 2s;
-}
-
-@keyframes spam {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.punto {
-  position: absolute;
-  inset: 0;
-  z-index: 10;
-  transform: rotate(calc(3.6deg * var(--num)));
-  animation: movpunto 2s linear forwards;
-}
-
-@keyframes movpunto {
-  0% {
-    transform: rotate(0deg) ;
-  }
-  100% {
-    transform: rotate(calc(3.6deg * var(--num)));
-  }
-}
-
-.punto::before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: var(--color);
-  box-shadow: 0 0 10px var(--color), 0 0 30px var(--color);
-}
-
-.numero {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.numero h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 4em;
-  font-weight: 700;
-  color: var(--color);
-}
-
-.numero h2 span {
-  font-weight: 500;
-  font-size: 1em;
-}
-
-.numero p {
-  font-weight: 500;
-  font-size: 1.4em;
-  letter-spacing: 2px;
-  text-transform: uppercase;
 }
