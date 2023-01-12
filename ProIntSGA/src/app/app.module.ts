@@ -12,6 +12,7 @@ import { ExplabComponent } from './components/explab/explab.component';
 import { EstudiosComponent } from './components/estudios/estudios.component';
 import { SkillsetComponent } from './components/skillset/skillset.component';
 import { TopbarComponent } from './components/topbar/topbar.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { TopbarComponent } from './components/topbar/topbar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [],
   bootstrap: [AppComponent]

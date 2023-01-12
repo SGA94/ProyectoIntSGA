@@ -1,7 +1,6 @@
 #skills {
+  margin: 10px 0px;
   border: 2px solid #f2f2f2;
-  margin-top: 10px;
-  margin-bottom: 10px;
   display: flex;
 }
 
@@ -11,7 +10,7 @@
 }
 
 .row {
-  margin: 0;
+  margin: 100px 0px;
   align-items: center;
   justify-content: space-evenly;
   min-height: 30vw;
@@ -38,42 +37,47 @@
 
 .my-skills {
   display: flex;
-  min-height: 40vh;
-  position: relative;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 40px;
+}
+
+.skill {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .progress {
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 320px;
+  height: 320px;
+  background: transparent;
 }
 
 .progress svg {
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 320px;
+  height: 320px;
   transform: rotate(270deg);
 }
 
 .progress svg circle {
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  height: 100%;
   fill: transparent;
-  stroke-width: 3;
+  stroke-width: 5px;
   stroke: black;
-  transform: translate(5px,5px);
 }
 
 .progress svg circle:nth-child(2) {
   stroke: var(--color);
-  stroke-dasharray: 440;
-  stroke-dashoffset: calc(440 - (440 * var(--num) / 100));
-  opacity: 0;
+  stroke-dasharray: 943;
+  stroke-dashoffset: calc(943 - (943 * var(--num) / 100));
   animation: spam 2s alternate-reverse infinite;
   animation-delay: 2s;
 }
@@ -89,7 +93,7 @@
 
 .punto {
   position: absolute;
-  inset: 5px;
+  inset: 0;
   z-index: 10;
   transform: rotate(calc(3.6deg * var(--num)));
   animation: movpunto 2s linear forwards;
@@ -102,16 +106,16 @@
   100% {
     transform: rotate(calc(3.6deg * var(--num)));
   }
-  
 }
+
 .punto::before {
   content: "";
   position: absolute;
   top: -5px;
   left: 50%;
   transform: translateX(-50%);
-  width: 10px;
-  height: 10px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background: var(--color);
   box-shadow: 0 0 10px var(--color), 0 0 30px var(--color);
@@ -130,7 +134,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3em;
+  font-size: 4em;
   font-weight: 700;
   color: var(--color);
 }
