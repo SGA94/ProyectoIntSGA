@@ -14,11 +14,13 @@
   margin: 0;
   align-items: center;
   justify-content: space-evenly;
-  min-height: 30vw;
+  min-height: 60vh;
 }
 
 .titulo {
-  height: 30em;
+  height: 60vh;
+  min-width: 2vw;
+  max-width: 8vw;
   border: 4px outset white;
   display: flex;
   justify-content: center;

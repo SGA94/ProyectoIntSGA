@@ -12,15 +12,19 @@
 
 .container-fluid {
   background-color: rgba(0, 0, 0, 0.35);
-  height: 500px;
+  height: 550px;
   border: 2px solid #f2f2f2;
   color: white;
 }
 
 .frase {
+  max-width: 100vw;
+}
+
+.frase h1 {
   font-family: 'Lobster', cursive;
   text-align: center;
-  font-size: 3vmax;
+  font-size: calc(1rem + 1vw);
 }
 
 .perfil {
