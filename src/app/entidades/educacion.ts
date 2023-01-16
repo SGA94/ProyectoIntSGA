@@ -1,4 +1,4 @@
-export interface Education{
+export interface Educacion{
   idEdu: number;
   tituloEdu: String;
   fechaEdu: String;

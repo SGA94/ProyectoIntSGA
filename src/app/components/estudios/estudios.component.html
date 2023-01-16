@@ -12,7 +12,7 @@
     {{education.descEdu}}
   </div>
 </div> -->
-<div id="estudios">
+<div id="estudios" *ngFor="let edu of educacion">
   <div class="container-fluid">
     <div class="row">
       <div class="col-2">
@@ -25,7 +25,7 @@
           <div class="col-12 col-sm-6 col-xl-3">
             <div class="inst">
               <img src="assets/img/LOGO 3138.png" alt="ETT 3138">
-              <h3><strong>Técnico Electrónico</strong><br>Esc. de Ed. Técnica N° 3138<br>2006 - 2012</h3>  
+              <h3><strong>{{edu.tituloEdu}}</strong><br>Esc. de Ed. Técnica N° 3138<br>{{edu.fechaEdu}}</h3>  
             </div>
           </div>
           <div class="col-12 col-sm-6 col-xl-3">

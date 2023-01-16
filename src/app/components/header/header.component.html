@@ -1,8 +1,4 @@
-<!-- <div  *ngIf="usuario">  //Esta manera se implementa un usuario
-  <h1>{{usuario.nombre}}</h1>
-  <img src="{{usuario.fotoPerfil}} alt="fotoperfil">
-</div> -->
-<header id="baner" *ngIf="usuario">
+<header id="baner" *ngIf="persona">
   <div class="container-fluid">
     <div class="col-12">
       <div class="frase">
@@ -17,10 +13,10 @@
           </div>
         </div>
         <div class="col-12">
-          <div class="nombre"><strong>{{usuario.apellido}}, {{usuario.nombre}}</strong></div>
+          <div class="nombre"><strong>{{persona.apellido}}, {{persona.nombre}}</strong></div>
         </div>
         <div class="col-12">
-          <div class="developer">{{usuario.titulo}}</div>
+          <div class="developer">Full Stack Developer Jr.</div>
         </div>
       </div>        
     </div>
