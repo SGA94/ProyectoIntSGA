@@ -1,4 +1,8 @@
-<header id="baner">
+<!-- <div  *ngIf="usuario">  //Esta manera se implementa un usuario
+  <h1>{{usuario.nombre}}</h1>
+  <img src="{{usuario.fotoPerfil}} alt="fotoperfil">
+</div> -->
+<header id="baner" *ngIf="usuario">
   <div class="container-fluid">
     <div class="col-12">
       <div class="frase">
@@ -8,15 +12,15 @@
     <div class="col-12">
       <div class="perfil">
         <div class="col-12">
-          <div class="img-perfil">
+          <div class="img-perfil" >
             <img src="assets/img/perfil.jpg" alt="foto-perfil" class="img-fluid">
           </div>
         </div>
         <div class="col-12">
-          <div class="nombre"><strong>SOLIZ, GABRIEL ALEJANDRO</strong></div>
+          <div class="nombre"><strong>{{usuario.apellido}}, {{usuario.nombre}}</strong></div>
         </div>
         <div class="col-12">
-          <div class="developer">Full Stack Developer JR.</div>
+          <div class="developer">{{usuario.titulo}}</div>
         </div>
       </div>        
     </div>

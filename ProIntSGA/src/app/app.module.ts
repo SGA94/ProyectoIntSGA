@@ -12,6 +12,10 @@ import { EstudiosComponent } from './components/estudios/estudios.component';
 import { SkillsetComponent } from './components/skillset/skillset.component';
 import { TopbarComponent } from './components/topbar/topbar.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +27,16 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     ExplabComponent,
     EstudiosComponent,
     SkillsetComponent,
-    TopbarComponent
+    TopbarComponent,
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
